@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="header-div">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#" id="accountBtn">Account</a>
+        </div>
+
+        <div class="site-name">Trendora</div>
+
+        <div class="search-row">
+            <select class="dropdown">
+                <option>All Category</option>
+                <option>Clothes</option>
+                <option>Jewellery</option>
+                <option>Beauty Products</option>
+            </select>
+
+            <div class="search-button">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <select class="language-select">
+                <option>Language</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Dutch</option>
+            </select>
+
+            <button class="action-button">Add to Cart</button>
+            <button class="action-button">Orders</button>
+        </div>
+        <div class="headline-container">
+            <button class="nav-button" onclick="changeText(-1)">&lt;</button>
+            <h1 id="headline-text">GET START YOUR FAVORITE SHOPPING</h1>
+            <button class="nav-button" onclick="changeText(1)">&gt;</button>
+        </div>
+        <button class="buy-button">Buy</button>
+
+    </div>
+    <h2 class="section-title">Electronics Products</h2>
+
+    <div class="slider-container">
+        <!-- Prev Button -->
+        <button class="scroll-btn prev" onclick="scrollElectronics(-1)">&#10094;</button>
+
+        <!-- Scrollable Electronics Container -->
+        <div class="scroll-container" id="electronics-container">
+
+            <!-- Laptop -->
+            <div class="product-card"
+                onclick="openProductPage('Samsung Galaxy Book','₹65,000','High-performance laptop suitable for gaming and professional work.','https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRgfsUIizt2eYiw4rnKBFHyPkK-jBFxcnEiaUA5zSxI6Lrbd8BwBEBrfS9lLLK6LeEKGjY4Z-5ym0t8d2QPBw4nTQdmr9F8644PkkaLROzXpySEqAYaKB9lHw')">
+                <h3>Samsung Galaxy Book</h3>
+                <p class="price">₹65,000</p>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRgfsUIizt2eYiw4rnKBFHyPkK-jBFxcnEiaUA5zSxI6Lrbd8BwBEBrfS9lLLK6LeEKGjY4Z-5ym0t8d2QPBw4nTQdmr9F8644PkkaLROzXpySEqAYaKB9lHw"
+                    alt="Samsung Galaxy Book" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Mobile -->
+            <div class="product-card">
+                <h3>Mobile</h3>
+                <p class="price">₹25,000</p>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTpjibndlADbFWA6dV8dK3kfDLjUf7UnN_rNSuIRJRHvOReqHAVWyvNAGM3J5dRHuq5dDa6jy8gNC9MS1FdievbsmcurWAqO9U6T3DleDw29SnNLnqG6HDi"
+                    alt="Mobile" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- CPU -->
+            <div class="product-card">
+                <h3>CPU</h3>
+                <p class="price">₹15,000</p>
+                <img src="https://m.media-amazon.com/images/I/61aY2zcHQvL._SX300_SY300_QL70_FMwebp_.jpg" alt="CPU"
+                    class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Keyboard -->
+            <div class="product-card">
+                <h3>Keyboard</h3>
+                <p class="price">₹899</p>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSvESO9cNZf-NTjb-_AYJ8ndqzThR0pU4QkSoNpZYTwk-rpPFYrhSiQFifHogNtC2DuEJF005nmC_d83Ph6RqcsinqwNKB4TgJudJlnDrrtudtUcBC6FP9l"
+                    alt="Keyboard" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- EarBuds -->
+            <div class="product-card">
+                <h3>EarBuds</h3>
+                <p class="price">₹1,499</p>
+                <img src="https://img3.gadgetsnow.com/gd/images/products/additional/large/G466741_View_1/accessories/headphones-headsets/boat-airdopes-141-anc-tws-earbuds-with-42-hrs-playback-type-c-port-ipx5-green-.jpg"
+                    alt="EarBuds" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Smart Watch -->
+            <div class="product-card">
+                <h3>Smart Watch</h3>
+                <p class="price">₹2,999</p>
+                <img src="https://m.media-amazon.com/images/I/71pC69I3lzL._AC_UY327_FMwebp_QL65_.jpg" alt="Smart Watch"
+                    class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Next Button -->
+        <button class="scroll-btn next" onclick="scrollElectronics(1)">&#10095;</button>
+    </div>
+
+
+    <h2 class="section-title">Beauty Products</h2>
+
+    <div class="slider-container">
+        <!-- Prev Button -->
+        <button class="scroll-btn prev" onclick="scrollBeauty(-1)">&#10094;</button>
+
+        <!-- Scrollable Beauty Container -->
+        <div class="scroll-container" id="Beauty-container">
+
+            <!-- Lipstick -->
+            <div class="product-card">
+                <h3>Lipstick</h3>
+                <p class="price">₹499</p>
+                <img src="data:image/webp;base64,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"
+                    alt="Lipstick" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Face Cream -->
+            <div class="product-card">
+                <h3>Face Cream</h3>
+                <p class="price">₹1,299</p>
+                <img src="https://www.bing.com/th?id=OPAC.MNi87SNIWG%2BV8A474C474&o=5&pid=21.1&h=140&rs=1&qlt=100&dpr=1.3&o=2&w=147"
+                    alt="Face Cream" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Perfume -->
+            <div class="product-card">
+                <h3>Perfume</h3>
+                <p class="price">₹15,000</p>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQWzYSip9ZTtF35ZT9qKgaOZtrmWKGdEXZBW_UDczcu_BKiIRGBRzxxcT7AtdytAKe6KrF78pa-8VULW6joQdAol8aB40AKBS0-8xTz3fwsVbYvAQ6rRO7d8jTXbbLlEz8KN46Mj9uMEOA&usqp=CAc"
+                    alt="Perfume" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Plum Toner with Rice Water -->
+            <div class="product-card">
+                <h3>Plum Toner with Rice Water</h3>
+                <p class="price">₹352</p>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR_Gj3txKguLL8w0izkqkfeQCVTKoNDe8lUFYQmcbFGadm9z73cxkePkiB5G_MUKyLMHIEMdh4aUY-zgcTzO8sdJBPw3H6-wC5Xna5SmzSJM72GxVcBZwagkg"
+                    alt="Plum Toner with Rice Water" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- MARS TRIO Treat 3-IN-1 Eye Makeup Kit -->
+            <div class="product-card">
+                <h3>MARS TRIO Treat 3-IN-1 Eye Makeup Kit</h3>
+                <p class="price">₹557</p>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTT5dOF9I9dfKvgTAVyNmXhtwuGxulgdPYGksaq1tLmQAnWjN5YF3wIWKuWBOheMnzrUcs8YiIMb3I3n6GM5KSC2pSvix-cA4N-ol-iZqfXsMKVhqR7C3obho"
+                    alt="MARS TRIO Treat 3-IN-1 Eye Makeup Kit" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Cetaphil Cleanser Oily Skin -->
+            <div class="product-card">
+                <h3>Cetaphil Cleanser Oily Skin</h3>
+                <p class="price">₹977</p>
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTLsB-YzH8ybWXGoKkFs4CEEUqgzXACyKD4t46ZJ5Pg7H_C8EErwvNrkcsEUnzGKnX2bXh83yx3Vq6sXSrcF6N4yedgUKGIBMKn8Kox4EfQhRkBWv7D9AD9oA"
+                    alt="Smart Watch" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Next Button -->
+        <button class="scroll-btn next" onclick="scrollBeauty(1)">&#10095;</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="section-title">Man & Woman Fashion</h2>
+
+    <div class="slider-container">
+        <!-- Prev Button -->
+        <button class="scroll-btn prev" onclick="scrollfashin(-1)">&#10094;</button>
+
+        <!-- Scrollable Beauty Container -->
+        <div class="scroll-container" id="fashin-container">
+
+            <!-- Urbano Fashion Men's Loose Baggy Fit Washed Jeans -->
+            <div class="product-card">
+                <h3>Urbano Fashion Men's Loose Baggy Fit Washed Jeans</h3>
+                <p class="price">₹1,049</p>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQYVDoMqS_RFsVxRLeH3Ocli3GAtefNonNu-Aej5axEvhhe2if2rgYotnbAjWD6XkBA-Br8SaQLm--srVGXUMdgdGAykbsd2sGFyk4YdvJd"
+                    alt="Urbano Fashion Men's Loose Baggy Fit Washed Jeans" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- LITZO Women's Western Dresses -->
+            <div class="product-card">
+                <h3>LITZO Women's Western Dresses</h3>
+                <p class="price">₹649</p>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRpFFdRM3sLMR2e6cxBUopT5OrxhiMbAea1O_eslBTo078l4Cmoz1IHkF44ROI3KqUaQ9mcuxZhzWZYmVALQX5NclTPqzTJRto_dB6pm_rZJNsIvteTx5-rHo8"
+                    alt="LITZO Women's Western Dresses" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Women's Floral Sleeveless Dress -->
+            <div class="product-card">
+                <h3>Women's Floral Sleeveless Dress</h3>
+                <p class="price">₹1,690</p>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ2sJlGJXPADp4mt8bjg0y_ohKEjo2qV5gS-hG1X_jAI4QxgoIEP4AhqNWv96l0u3qKi8IuG8Fon2kL-TlTMgWEUPtMb1Zbd0mH6UnMgtRr"
+                    alt="Women's Floral Sleeveless Dress" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Nobero Oversized Textured Shackets -->
+            <div class="product-card">
+                <h3>Nobero Oversized Textured Shackets</h3>
+                <p class="price">₹1,699</p>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkv6UQ7dl9eZDaAo5FHPNRDfRGmVD7NigEuGs70ZLWVEUmSR4NRNY6Avib3yXOTk2t3Go-Vfce7XQmvhpbZ82lqvcArJ_oidkDrCDuB4k6sJk02T6SsjlggQ"
+                    alt="Nobero Oversized Textured Shackets" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Elegant Weaving Lace Border Dupatta -->
+            <div class="product-card">
+                <h3>Elegant Weaving Lace Border Dupatta</h3>
+                <p class="price"> ₹999</p>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRDNPa8c3GoChMJHLImE5GM2Ao0_4glFqSGUB6UZkxoUHADxk2yZMzRJeNihOIS75uaGYt4CqeszgnEpSMQ-EBDho-b9kr7i92N0CXEZ5pBq09QW_Z1oi2G"
+                    alt="Elegant Weaving Lace Border Dupatta" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Fashion Basket Women's Solid Anarkali Dress -->
+            <div class="product-card">
+                <h3>Fashion Basket Women's Solid Anarkali Dress</h3>
+                <p class="price">₹977</p>
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTSLKxKXimU7bqacua58NiGNVc6wkX2Aw8L2s0MhDRiaCkWx9Gym8L79O5lNsd5TrZb8kxeDqSO7OvvtQOcwmMrNiaUDTDr7pgG0_X3-rgbzszovgZKXa_iPw"
+                    alt="Fashion Basket Women's Solid Anarkali Dress" class="product-img">
+                <div class="product-footer">
+                    <a href="#" class="read-more">Read More</a>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Next Button -->
+        <button class="scroll-btn next" onclick="scrollfashin(1)">&#10095;</button>
+    </div>
+    </div>
+
+</body>
+
+</html>
